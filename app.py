@@ -10,6 +10,7 @@ app = Flask(__name__)
 MONGODB_HOST = '172.20.213.43'
 MONGODB_PORT = 27080
 DBS_NAME = 'ftrack'
+connection = MongoClient(MONGODB_HOST, MONGODB_PORT)
 
 FIELDS = {'episode': True, 'start_date': True, 'completed_date': True, 'completed_time_difference': True, 'shot': True,
           'user': True, 'completed_locked_difference': True, 'locked_schedule_date': True,
@@ -88,7 +89,6 @@ def retakesPerUser():
 
 @app.route("/ftrack/projects")
 def donor_projects():
-    connection = MongoClient(MONGODB_HOST, MONGODB_PORT)
     COLLECTION_NAME = 'AnimWorkprintComplete'
     collection = connection[DBS_NAME][COLLECTION_NAME]
     projects = collection.find(projection=FIELDS)
@@ -102,11 +102,10 @@ def donor_projects():
 
 @app.route("/ftrack/retakesperuser")
 def mn107retakesperuser():
-    connection = MongoClient(MONGODB_HOST, MONGODB_PORT)
     COLLECTION_NAME = 'RetakesEpandUser'
     collection = connection[DBS_NAME][COLLECTION_NAME]
     FIELDS = {'retakes': True, 'episode': True}
-    projects = collection.find({"project": 'MN107'})
+    projects = collection.find()
     json_projects = []
     for project in projects:
         json_projects.append(project)
@@ -117,7 +116,6 @@ def mn107retakesperuser():
 
 @app.route("/ftrack/mn107/retakes")
 def mn107retakes():
-    connection = MongoClient(MONGODB_HOST, MONGODB_PORT)
     COLLECTION_NAME = 'RetakesPerEpisode'
     collection = connection[DBS_NAME][COLLECTION_NAME]
     FIELDS = {'retakes': True, 'episode': True}
