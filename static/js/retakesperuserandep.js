@@ -39,11 +39,14 @@ $.getJSON(mongoDBdata, function(mongodata) {
             height: 700
         },
         title: {
-            text: user
+            text: user + ' Total Retakes: '
         },
         data: {
             color: '#ff7f0e',
             type: 'bar',
+            colors: {
+                Retakes: '#ff7f0e',
+            },
             columns: [
                 retakes,
             ]
@@ -73,6 +76,7 @@ $.getJSON(mongoDBdata, function(mongodata) {
         },
         data: {
             type: 'bar',
+
             onclick: function(d, i) {
                 index = d['index'];
                 person = users[index]

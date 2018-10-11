@@ -24,10 +24,17 @@ $.getJSON('http://localhost:5000/ftrack/mn107/retakes', function(mongodata) {
                 height: 700
         },
         data: {
+            type:'bar',
             columns: [
                 retakes
             ]
         },
+        //        zoom: {
+//            enabled: true
+//        },
+//        subchart: {
+//            show: true
+//        },
         axis: {
             x: {
             tick: {

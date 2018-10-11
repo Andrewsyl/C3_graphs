@@ -17,64 +17,68 @@ FIELDS = {'episode': True, 'start_date': True, 'completed_date': True, 'complete
           'start_completed_difference': True, 'project': True}
 
 
+@app.route('/')
+def home():
+    return render_template('home.html')
+
 @app.route('/animworkprint/mn107/112')
 def one():
-    return render_template('animworkprint/mn107/112.html')
+    return render_template('animworkprint/mn107/episodetemplate.html')
 
 
 @app.route('/animworkprint/mn107/113')
 def two():
-    return render_template('animworkprint/mn107/113.html')
+    return render_template('animworkprint/mn107/episodetemplate.html')
 
 
 @app.route('/animworkprint/mn107/114')
 def three():
-    return render_template('animworkprint/mn107/114.html')
+    return render_template('animworkprint/mn107/episodetemplate.html')
 
 
 @app.route('/animworkprint/mn107/115')
 def four():
-    return render_template('animworkprint/mn107/115.html')
+    return render_template('animworkprint/mn107/episodetemplate.html')
 
 
 @app.route('/animworkprint/mn107/116')
 def five():
-    return render_template('animworkprint/mn107/116.html')
+    return render_template('animworkprint/mn107/episodetemplate.html')
 
 
 @app.route('/animworkprint/mn107/117')
 def six():
-    return render_template('animworkprint/mn107/117.html')
+    return render_template('animworkprint/mn107/episodetemplate.html')
 
 
 @app.route('/animworkprint/mn107/118')
 def seven():
-    return render_template('animworkprint/mn107/118.html')
+    return render_template('animworkprint/mn107/episodetemplate.html')
 
 
 @app.route('/animworkprint/mn107/119')
 def eight():
-    return render_template('animworkprint/mn107/119.html')
+    return render_template('animworkprint/mn107/episodetemplate.html')
 
 
 @app.route('/animworkprint/mn107/120')
 def nine():
-    return render_template('animworkprint/mn107/120.html')
+    return render_template('animworkprint/mn107/episodetemplate.html')
 
 
 @app.route('/animworkprint/mn107/121')
 def ten():
-    return render_template('animworkprint/mn107/121.html')
+    return render_template('animworkprint/mn107/episodetemplate.html')
 
 
 @app.route('/animworkprint/mn107/122')
 def eleven():
-    return render_template('animworkprint/mn107/122.html')
+    return render_template('animworkprint/mn107/episodetemplate.html')
 
 
 @app.route('/animworkprint/mn107/123')
 def twelve():
-    return render_template('animworkprint/mn107/123.html')
+    return render_template('animworkprint/mn107/episodetemplate.html')
 
 
 @app.route('/mn107/retakesperep')

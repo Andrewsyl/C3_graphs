@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64dec8ee-ecb1-4c2e-9e51-92b523f7ffbc" name="Default" comment="">
+    <list default="true" id="64dec8ee-ecb1-4c2e-9e51-92b523f7ffbc" name="Default" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geojson/us-states.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/API.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/CHANGES.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/MN_animworkprint_graph.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/MN_animworkprint_graph.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/retakesPerEp.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/retakesPerEp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/retakesperuserandep.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/retakesperuserandep.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/animworkprint/mn107/index115.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/animworkprint/mn107/index115.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/retakesPerEp.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/retakesPerEp.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +29,7 @@
           <entry key="project.open.time.19" value="3" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="2" />
-          <entry key="project.open.time.22" value="2" />
+          <entry key="project.open.time.22" value="3" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.26" value="2" />
           <entry key="project.open.time.27" value="1" />
@@ -39,14 +38,14 @@
           <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="25" />
+          <entry key="project.opened" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="conf" value="2" />
           <entry key="csv" value="1" />
-          <entry key="html" value="35" />
+          <entry key="html" value="40" />
           <entry key="js" value="41" />
           <entry key="json" value="3" />
           <entry key="md" value="4" />
@@ -58,7 +57,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSV" value="1" />
-          <entry key="HTML" value="35" />
+          <entry key="HTML" value="40" />
           <entry key="JSON" value="3" />
           <entry key="JavaScript" value="41" />
           <entry key="MONGO" value="1" />
@@ -70,16 +69,18 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="241" />
-          <entry key="html" value="423" />
-          <entry key="js" value="7808" />
-          <entry key="py" value="5604" />
+          <entry key="html" value="1021" />
+          <entry key="js" value="8467" />
+          <entry key="py" value="5667" />
+          <entry key="txt" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="423" />
-          <entry key="JavaScript" value="7808" />
-          <entry key="Python" value="5845" />
+          <entry key="HTML" value="1021" />
+          <entry key="JavaScript" value="8467" />
+          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="Python" value="5908" />
         </counts>
       </usages-collector>
     </session>
@@ -89,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1513">
-              <caret line="94" column="22" selection-start-line="94" selection-start-column="22" selection-end-line="94" selection-end-column="22" />
+            <state relative-caret-position="323">
+              <caret line="25" column="70" lean-forward="true" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -99,19 +100,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/animworkprint/mn107/index115.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/animworkprint/mn107/episodetemplate.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/js/retakesPerEp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="442">
+              <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/retakesperuserandep.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="346">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static/js/retakesperuserandep.js">
+        <entry file="file://$PROJECT_DIR$/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+            <state relative-caret-position="476">
+              <caret line="28" column="10" lean-forward="true" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -119,8 +147,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/js/MN_animworkprint_graph.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2958">
-              <caret line="174" column="11" selection-start-line="174" selection-start-column="11" selection-end-line="174" selection-end-column="11" />
+            <state relative-caret-position="37">
+              <caret line="115" column="25" lean-forward="true" selection-start-line="115" selection-start-column="25" selection-end-line="115" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -140,8 +168,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/retakesPerEp.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+            <state relative-caret-position="442">
+              <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -158,23 +186,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>../</find>
-      <find>days</find>
-      <find>tasks</find>
-      <find>'tasks'</find>
-      <find>RetakesEpandUser</find>
-      <find>total</find>
-      <find>Abochicchio</find>
-      <find>Tyoung</find>
-      <find>Rquigley</find>
-      <find>mo10</find>
-      <find>episode</find>
-      <find>rotat</find>
-      <find>commit()</find>
-      <find>RBA</find>
-      <find>created</find>
-      <find>act</find>
-      <find>Act</find>
       <find>obj</find>
       <find>myC</find>
       <find>form</find>
@@ -186,11 +197,32 @@
       <find>index</find>
       <find>action_page</find>
       <find>titl</find>
-      <find>title</find>
       <find>=</find>
+      <find>?</find>
+      <find>user</find>
+      <find>autocomplete</find>
+      <find>myIn</find>
+      <find>Star</find>
+      <find>button</find>
+      <find>111</find>
+      <find>112.html</find>
+      <find>episodetemplate</find>
+      <find>&lt;a</find>
+      <find>Start/</find>
+      <find>From S</find>
+      <find>compl</find>
+      <find>split</find>
+      <find>total_retakes</find>
+      <find>Total</find>
+      <find>title</find>
+      <find>secondary</find>
     </findStrings>
     <replaceStrings>
       <replace>mongodata</replace>
+      <replace>episodetemplate</replace>
+      <replace>episodetemplate.html</replace>
+      <replace>112</replace>
+      <replace>primary</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -200,10 +232,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="//polaris_belt/Sandymount_Production_01/010_BM_Development/012_BitBucket/fTrack/BM_PrintNotes/bm_printNotes.py" />
-        <option value="//polaris_belt/Sandymount_Production_01/010_BM_Development/012_BitBucket/fTrack/BM_PrintNotes/bm_printNotes_MPTest.py" />
-        <option value="//polaris_belt/Sandymount_Production_01/010_BM_Development/012_BitBucket/fTrack/BM_PrintNotes/bm_printNotes_Upated.py" />
-        <option value="//polaris_belt/Sandymount_Production_01/010_BM_Development/012_BitBucket/fTrack/00_snippets/createtasks_v2.py" />
         <option value="//polaris_belt/Sandymount_Production_01/010_BM_Development/012_BitBucket/fTrack/BM_CreateEpTasks/bm-Overseas-MLP_CreateTasks_v1.py" />
         <option value="//polaris_belt/Sandymount_Production_01/010_BM_Development/012_BitBucket/fTrack/00_snippets/RetakesPerEpisode.py" />
         <option value="//polaris_belt/Sandymount_Production_01/010_BM_Development/012_BitBucket/fTrack/BM_PrintNotes/Printed_Notes_by_Category.py" />
@@ -219,11 +247,8 @@
         <option value="$PROJECT_DIR$/index114.html" />
         <option value="$PROJECT_DIR$/static/js/retakesPerEp.html" />
         <option value="$PROJECT_DIR$/templates/index122.html" />
-        <option value="$PROJECT_DIR$/templates/retakesPerEp.html" />
-        <option value="$PROJECT_DIR$/static/js/retakesPerEp.js" />
         <option value="$PROJECT_DIR$/templates/animworkprint/mn107/index112.html" />
         <option value="$PROJECT_DIR$/templates/animworkprint/mn107/index114.html" />
-        <option value="$PROJECT_DIR$/templates/animworkprint/mn107/index115.html" />
         <option value="$PROJECT_DIR$/templates/animworkprint/mn107/index116.html" />
         <option value="$PROJECT_DIR$/templates/animworkprint/mn107/index117.html" />
         <option value="$PROJECT_DIR$/templates/animworkprint/mn107/index118.html" />
@@ -247,10 +272,17 @@
         <option value="//polaris_belt/Sandymount_Production_01/010_BM_Development/012_BitBucket/fTrack/BM_updateLinkedStatus/BM_updateLinkedStatus_listener_set_readyToStart.py" />
         <option value="$PROJECT_DIR$/retakesperuserandep.js" />
         <option value="$PROJECT_DIR$/templates/retakesPerUserandEp.html" />
-        <option value="$PROJECT_DIR$/app.py" />
-        <option value="$PROJECT_DIR$/static/js/MN_animworkprint_graph.js" />
         <option value="$PROJECT_DIR$/templates/retakesUserandEp.html" />
+        <option value="$PROJECT_DIR$/templates/animworkprint/mn107/index115.html" />
+        <option value="$PROJECT_DIR$/templates/animworkprint/mn107/112.html" />
+        <option value="$PROJECT_DIR$/static/js/MN_animworkprint_graph.js" />
+        <option value="$PROJECT_DIR$/templates/retakesPerEp.html" />
+        <option value="$PROJECT_DIR$/static/js/retakesPerEp.js" />
         <option value="$PROJECT_DIR$/static/js/retakesperuserandep.js" />
+        <option value="$PROJECT_DIR$/static/js/home.html" />
+        <option value="$PROJECT_DIR$/templates/animworkprint/mn107/episodetemplate.html" />
+        <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/templates/home.html" />
       </list>
     </option>
   </component>
@@ -266,7 +298,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -294,6 +325,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -459,18 +491,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="2552" y="-8" width="1936" height="1216" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.13859275" />
       <window_info anchor="bottom" id="Python Console" order="0" weight="0.32963988" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.32963988" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.32963988" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.2705448" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.2705448" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.31394276" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -484,12 +515,16 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/app.py</url>
-          <line>93</line>
+          <line>97</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../pandas/pandasgraph.py</url>
@@ -598,7 +633,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/app.py</url>
-          <line>106</line>
+          <line>110</line>
           <option name="timeStamp" value="149" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -623,7 +658,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/app.py</url>
-          <line>85</line>
+          <line>89</line>
           <option name="timeStamp" value="165" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -707,41 +742,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/animworkprint/mn107/index112.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="61" selection-end-line="34" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/animworkprint/mn107/index114.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/animworkprint/mn107/index115.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/animworkprint/mn107/index116.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/animworkprint/mn107/index117.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/animworkprint/mn107/index118.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -934,30 +934,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1513">
-          <caret line="94" column="22" selection-start-line="94" selection-start-column="22" selection-end-line="94" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/retakesPerEp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/MN_animworkprint_graph.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2958">
-          <caret line="174" column="11" selection-start-line="174" selection-start-column="11" selection-end-line="174" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/retakesUserandEp.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1513">
@@ -968,17 +944,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/animworkprint/mn107/112.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/retakesPerEp.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/MN_animworkprint_graph.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="115" column="25" lean-forward="true" selection-start-line="115" selection-start-column="25" selection-end-line="115" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/animworkprint/mn107/index115.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+          <caret line="25" column="70" lean-forward="true" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/retakesperuserandep.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        <state relative-caret-position="346">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/retakesPerEp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/animworkprint/mn107/episodetemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="10" lean-forward="true" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
         </state>
       </provider>
     </entry>

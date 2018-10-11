@@ -1,5 +1,21 @@
 <html>
 <head>
+    <style>
+        .btn-info {
+            border-radius :25px !important;
+        }
+        .head {
+            text-align: center;
+        }
+        .c3-title {
+            font: 19px sans-serif !important;
+        }
+        a {
+            color: white !important;
+        }
+
+
+    </style>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.23/c3.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -18,14 +34,20 @@
 
 </head>
 <body>
-<div id="chart"></div>
+
+<div class="head">
+    <h1>Animworkprint Schedule</h1>
+</div>
+
 <br>
 <div class="center-block text-center">
-    <button type="submit" class="btn btn-primary" id="mn">RBA</button>
-    <button type="submit" class="btn btn-primary" id="rba">Micro-naughts<a href="/stuff123">qwewqe</a></button>
+    <h3>Choose Episode</h3>
     <div id="test"></div>
 </div>
 <br>
+
+<div id="chart"></div>
+
 
 </body>
 <script type="text/javascript" src="../../../static/js/MN_animworkprint_graph.js">

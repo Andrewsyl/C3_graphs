@@ -15,15 +15,15 @@ function main(episode) {
         mongodata.sort(compare)
 
         //MN107 Lists being populated
-        var MN_start_time_diff = ['Start/Completed']
-        var MN_end_time_diff = ['Completed/End']
+        var MN_start_time_diff = ['Started to Completed']
+        var MN_end_time_diff = ['Completed to Locked Schedule']
         var MN_locked_time = ['Due Date']
         var MN_completed_date = ['Completed']
         var MN_shots = []
         var MN_started_time = ['Started']
         var eps = []
 
-        // Grabs URL and takes the episode number at the end. Then uses it to filter by episode below
+        // Grabs URL and takes the episode number at the end. Then uses it to filter data by episode below
         episode = (window.location.href)
         episode = episode.split('/')
         episode = episode[episode.length -1]
@@ -58,7 +58,7 @@ function main(episode) {
         if (generate_buttons) {
             for (i = 0; i < eps.length; i++) {
                 var btn = $("<button/>");
-                $('#test').append('<a href="' + eps[i] + '"><button value="' + eps[i] + '">' + eps[i] + '</a>');
+                $('#test').append('<a href="' + eps[i] + '"><button class="btn btn-info" value="' + eps[i] + '">' + eps[i] + '</button></a> ');
 
                 generate_buttons = false;
             }
@@ -79,7 +79,13 @@ function main(episode) {
                 height: height
             },
             title: {
-                text: episode
+                text:'Episode: ' + episode,
+                padding: {
+                  top: 10,
+                  right: 20,
+                  bottom: 25,
+                  left: 50
+                }
             },
             tooltip: {
                 format: {},
@@ -117,21 +123,26 @@ function main(episode) {
                         bgcolor = $$.levelColor ? $$.levelColor(d[i].value) : color(d[i].id);
 
                         text += "<tr class='" + $$.CLASS.tooltipName + "-" + d[i].id + "'>";
-                        if (name == 'Completed/End' && d[i].value > 0) {
+                        if (name == 'Completed to Locked Schedule' && d[i].value > 0) {
                             text += "<td class='name'><span style='background-color:" + bgcolor + "'></span>" + 'OverDue' + "</td>";
-                        } else if ((name === 'Completed/End' && d[i].value < 0)) {
+                        } else if ((name === 'Completed to Locked Schedule' && d[i].value < 0)) {
                             text += "<td class='name'><span style='background-color:" + '#1da31d' + "'></span>" + 'On Time' + "</td>";
                         }
-                        //                        else if ((name === 'Start/Completed' &&  d[i].value < 0)){
-                        //                            text += "<td class='name'><span style='background-color:" + bgcolor + "'></span>" + name + "</td>";
-                        //                        }
-                        //                        else if ((name === 'Completed/End' &&  d[i].value < 0)){
-                        //                            text += "<td class='name'><span style='background-color:" + '#1da31d' + "'></span>" + 'Ahead of S' + "</td>";
-                        //                        }
                         else {
                             text += "<td class='name'><span style='background-color:" + bgcolor + "'></span>" + d[i].id + "</td>";
                         }
-                        text += "<td class='value'>" + value + " days</td>";
+                        if (value){
+                            var thing = value.toString()
+                            if ( thing.indexOf('-') > 0) {
+                                value = dateformater(value)
+                                text += "<td class='value'>" + value + "</td>";
+                            } else {
+                                text += "<td class='value'>" + value + " days</td>";
+                            }
+                        } else {
+                            value = 'No Data'
+                            text += "<td class='value'>" + value + "</td>";
+                        }
                         text += "</tr>";
                     }
                     return text + "</table>";
@@ -146,7 +157,7 @@ function main(episode) {
                 ],
                 type: 'bar',
                 colors: {
-                    'Completed/End': function(d) {
+                    'Completed to Locked Schedule': function(d) {
                         return d.value < 0 ? '#1da31d' : '#ff4747';
                     }
                 },
@@ -177,7 +188,7 @@ function main(episode) {
 
         setTimeout(function() {
             chart.groups([
-                ['Start/Completed', 'Completed/End']
+                ['Started to Completed', 'Completed to Locked Schedule']
             ])
         }, 1000);
 
@@ -185,4 +196,10 @@ function main(episode) {
     });
 }
 
+function dateformater(value) {
+    value = value.split('-')
+    value = value.reverse()
+    value = value.join('/')
+    return value
+}
 main()
